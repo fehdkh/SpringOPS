@@ -31,7 +31,7 @@ public class FactureServiceImplMock {
 	List<Facture> listFactures = new ArrayList<Facture>();
 	
 	@Test
-	public void testRetrieveFactureMock() {
+	public void testRetrieveFacture() {
 		Mockito.when(factureRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(facture));
 		Facture facture2 = factureService.retrieveFacture((long) 1);
 		Assertions.assertNotNull(facture2);
