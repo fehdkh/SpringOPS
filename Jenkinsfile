@@ -1,7 +1,7 @@
 pipeline {
       environment { 
         registry = "fehdkh/fehd" 
-        registryCredential = 'khayatifehd@gmail.com' 
+        registryCredential = 'ef1e6cc6-4a9e-4f81-ac04-5ddb3ff5dfd0' 
         dockerImage = '' 
     }
 
