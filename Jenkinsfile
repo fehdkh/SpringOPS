@@ -13,6 +13,12 @@ pipeline {
                 git branch: 'main', url:'https://github.com/fehdkh/SpringOPS.git'
                 }
             }
+           stage('mvn version check') {
+            steps {
+                // Get some code from a GitHub repository
+                sh "mvn --version"
+                }
+            }
         stage('Maven clean'){
             steps{
                 // Clean artifacts and package a new one.
