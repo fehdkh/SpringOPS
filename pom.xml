@@ -19,8 +19,8 @@
 	</properties>
 	<distributionManagement>
         <repository>
-        	<id>cloud-3party</id>
-        	<name>cloud-3party</name>
+        	<id>DeploymentRepo</id>
+        	<name>DeploymentRepo</name>
         	<url>http://192.168.1.110:8081/repository/maven-releases/</url>
     	</repository>
 	</distributionManagement>
