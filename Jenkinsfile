@@ -38,11 +38,11 @@ pipeline {
             }
         }
         
-        /*stage('JUnit/Mockito'){
+        stage('JUnit/Mockito'){
             steps{
-            sh 'mvn test -Dmaven.test.failure.ignore=true'
+            echo 'mvn test -Dmaven.test.failure.ignore=true'
             }
-        }*/
+        }
         stage('mvn nexus') {
             steps {
                 // Get some code from a GitHub repository
