@@ -34,7 +34,7 @@ pipeline {
         
         stage('SonarQube analysis'){
             steps{
-            sh "mvn sonar:sonar -Dsonar.projectKey=achat -Dsonar.host.url=http://192.168.1.111:9000 -Dsonar.login=admin -Dsonar.password=fehd"
+            sh "mvn sonar:sonar -Dsonar.projectKey=achat -Dsonar.host.url=http://192.168.1.217:9000 -Dsonar.login=admin -Dsonar.password=fehd"
             }
         }
         
