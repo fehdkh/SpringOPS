@@ -75,11 +75,11 @@ pipeline {
                 sh "docker-compose up -d --build" 
             }
         }
-          stage('Docker Compose DOWN') { 
+          /*stage('Docker Compose DOWN') { 
             steps { 
                 sh "docker-compose down" 
             }
-        }
+        }*/
 
     }
 }
