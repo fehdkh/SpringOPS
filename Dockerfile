@@ -1,4 +1,4 @@
-FROM alpine
-RUN apk add openjdk11
-EXPOSE 8080
-CMD "java"
+FROM openjdk:11
+EXPOSE 8089
+COPY ./target/achat-1.0.jar achat-1.0.jar
+CMD ["java","-jar","achat-1.0.jar"]
