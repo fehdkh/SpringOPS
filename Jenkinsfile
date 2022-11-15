@@ -40,7 +40,8 @@ pipeline {
         
         stage('JUnit/Mockito'){
             steps{
-            echo 'mvn test -Dmaven.test.failure.ignore=true'
+            echo 'mvn test'
+                  /*sh"mvn test -Dmaven.test.failure.ignore=true"*/
             }
         }
         stage('mvn nexus') {
