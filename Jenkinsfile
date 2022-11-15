@@ -28,7 +28,7 @@ pipeline {
         stage('Maven compile'){
             steps{
                 // Deploys a new artifact in target/ directory
-                sh "mvn -Dmaven.test.failure.ignore=true install"
+                sh "mvn -Dmaven.test.failure.ignore=true compile"
                 }
             }
         
