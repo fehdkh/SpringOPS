@@ -50,6 +50,12 @@ pipeline {
                 sh 'mvn deploy'
                 }
             }
+         stage('Mail notification') {
+            steps {
+                // Get some code from a GitHub repository
+                mail( body:'Deployment finished successfully', subject:'Devops', to:'khayatifehd@gmail.com')
+                }
+            }
       stage('Building our image') { 
             steps { 
                 script { 
